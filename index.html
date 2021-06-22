@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./ScoreBoard.css">
+    <script src=./ScoreBoard.js defer></script>
+    <h1 id="Title"> Office Basketball Scoreboard </h1>
+
+</head>
+
+<body>
+
+    <button onClick=addGame()> Click to Add a New Game </button>
+    <button onClick=addPlayer()> Click to Add a New Player </button>
+    <button onClick=clearGame()> Click to Start New Game </button>
+
+    <p> Select a Game: </p>
+    <div id="gameButtons">   </div>
+
+    <p> Select Players: </p>
+    <div id="playerButtons">   </div>
+
+    <p> <button id="createBoard" onclick=buildScoreboard()> Create Scoreboard </button></p>
+
+    <div id="scoreboard"> </div>
+
+</body>
+
+
+
+</html>
