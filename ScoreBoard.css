@@ -1,10 +1,93 @@
-#Title
-{
-    font-size: 4em;
-    color: black    
+body {
+    font-family: Georgia, serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f5f0e8;
+    color: #1a1a1a;
 }
 
-.button 
-{
-    background-color: gray;
+#Title {
+    font-size: 2.8em;
+    color: #b5451b;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #b5451b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+button:hover {
+    background-color: #8f3615;
+}
+
+.selector-btn {
+    background-color: #555;
+    margin: 4px;
+}
+
+.selector-btn:hover {
+    background-color: #333;
+}
+
+.selector-btn.selected {
+    background-color: #2a7a2a;
+}
+
+#createBoard {
+    background-color: #1a5fa8;
+    font-size: 1em;
+    padding: 10px 24px;
+}
+
+#createBoard:hover {
+    background-color: #144880;
+}
+
+#scoreboard {
+    margin-top: 24px;
+}
+
+#scoreboard h2 {
+    color: #b5451b;
+    margin-bottom: 12px;
+}
+
+#scoreboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#scoreboard th,
+#scoreboard td {
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+#scoreboard thead {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#scoreboard tbody tr:nth-child(even) {
+    background-color: #e8e0d0;
 }

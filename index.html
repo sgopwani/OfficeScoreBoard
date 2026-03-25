@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Basketball Scoreboard</title>
     <link rel="stylesheet" href="./ScoreBoard.css">
-    <script src=./ScoreBoard.js defer></script>
-
+    <script src="./ScoreBoard.js" defer></script>
 </head>
 
 <body>
-    <h1 id="Title"> Office Basketball Scoreboard </h1>
-    <button onClick=addGame()> Click to Add a New Game Test</button>
-    <button onClick=addPlayer()> Click to Add a New Player Test 2</button>
-    <button onClick=clearGame()> Click to Start New Game Test 3</button>
 
-    <p> Select a Game: </p>
-    <div id="gameButtons">   </div>
+    <h1 id="Title">🏀 Office Basketball Scoreboard</h1>
 
-    <p> Select Players: </p>
-    <div id="playerButtons">   </div>
+    <div class="controls">
+        <button onclick="addGame()">+ Add Game</button>
+        <button onclick="addPlayer()">+ Add Player</button>
+        <button onclick="clearGame()">🗑 Clear</button>
+    </div>
 
-    <p> <button id="createBoard" onclick=buildScoreboard()> Create Scoreboard </button></p>
+    <p class="label">Select a Game:</p>
+    <div id="gameButtons"></div>
 
-    <div id="scoreboard"> </div>
+    <p class="label">Select Players:</p>
+    <div id="playerButtons"></div>
+
+    <p><button id="createBoard" onclick="buildScoreboard()">Create Scoreboard</button></p>
+
+    <div id="scoreboard"></div>
 
 </body>
-
-
 
 </html>
